@@ -1,0 +1,16 @@
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.csproj.AssemblyReference.cache
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.GeneratedMSBuildEditorConfig.editorconfig
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.AssemblyInfoInputs.cache
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.AssemblyInfo.cs
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.csproj.CoreCompileInputs.cache
+X:\DatePicker\MauiDatePicker\MauiDatePicker\bin\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.deps.json
+X:\DatePicker\MauiDatePicker\MauiDatePicker\bin\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.dll
+X:\DatePicker\MauiDatePicker\MauiDatePicker\bin\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.pdb
+X:\DatePicker\MauiDatePicker\MauiDatePicker\bin\Debug\net9.0-windows10.0.19041.0\Microsoft.Web.WebView2.Core.dll
+X:\DatePicker\MauiDatePicker\MauiDatePicker\bin\Debug\net9.0-windows10.0.19041.0\Microsoft.Web.WebView2.Core.Projection.dll
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\XamlC.stamp
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDate.A0679448.Up2Date
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.dll
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\refint\MauiDatePicker.dll
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\MauiDatePicker.pdb
+X:\DatePicker\MauiDatePicker\MauiDatePicker\obj\Debug\net9.0-windows10.0.19041.0\ref\MauiDatePicker.dll

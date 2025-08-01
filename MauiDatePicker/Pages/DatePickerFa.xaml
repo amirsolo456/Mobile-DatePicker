@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDatePicker.Pages.DatePickerFa"
+             NavigationPage.HasNavigationBar="False"
+             FlowDirection="RightToLeft"
+             BackgroundColor="White"
+             Title="">
+
+
+    <Grid Padding="14">
+        <ImageButton Source="backbutton.png"
+                     VerticalOptions="Start"
+                     Grid.Row="0"
+                    HeightRequest="60"
+                    HorizontalOptions="Start"
+                    BackgroundColor="Transparent"
+                    WidthRequest="32"                     
+                    Clicked="CloseButton_Clicked"/>
+
+        <Grid RowDefinitions="Auto,*" Padding="14" RowSpacing="12" Margin="0,48,0,0">
+
+
+            <VerticalStackLayout   Spacing="20">
+                <Grid Row="1" ColumnSpacing="16" VerticalOptions="Center" Margin="0,48,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Previous -->
+                    <ImageButton
+                       x:Name="PrevMonthButton"
+                       Source="rightcaret.png"
+                       BackgroundColor="Transparent"
+                       Grid.Column="0"
+                       Clicked="PrevMonthButton_Clicked" />
+
+                    <!-- Month & Year -->
+                    <HorizontalStackLayout
+                         VerticalOptions="Center"
+                         Grid.Column="1"
+                         HorizontalOptions="Center"
+                         Spacing="12">
+
+                        <Label
+                             x:Name="MonthLabel"
+                             Text="خرداد"
+                             FontFamily="IRANSans"
+                             FontAttributes="Bold"
+                             FontSize="16"
+                             TextColor="Black">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnMonthTapped" NumberOfTapsRequired="1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                        <Label
+                             x:Name="YearLabel"
+                             FontFamily="Yekan"
+                             Text="۱۴۰۴"
+                             FontAttributes="Bold"
+                             FontSize="16"
+                             TextColor="Black">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnYearTapped" NumberOfTapsRequired="1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                    </HorizontalStackLayout>
+
+                    <!-- Next -->
+                    <ImageButton
+                         x:Name="NextMonthButton"
+                         Source="leftcaret.png"
+                         BackgroundColor="Transparent"
+                         Grid.Column="2"
+                         Clicked="NextMonthButton_Clicked" />
+                </Grid>
+
+                <!-- Weekday Headers -->
+                <Grid Row="2" ColumnSpacing="6" Margin="0,16,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Text="شنبه" HorizontalOptions="Center" FontAttributes="Bold" FontSize="12" TextColor="#222" />
+                    <Label Grid.Column="1" Text="یکشنبه" HorizontalOptions="Center" FontAttributes="Bold" FontSize="12" TextColor="#222" />
+                    <Label Grid.Column="2" Text="دوشنبه" HorizontalOptions="Center" FontAttributes="Bold" FontSize="12" TextColor="#222" />
+                    <Label Grid.Column="3" Text="سه‌شنبه" HorizontalOptions="Center" FontAttributes="Bold" FontSize="12" TextColor="#222" />
+                    <Label Grid.Column="4" Text="چهار‌شنبه" HorizontalOptions="Center" FontAttributes="Bold" FontSize="12" TextColor="#222" />
+                    <Label Grid.Column="5" Text="پنجشنبه" HorizontalOptions="Center" FontAttributes="Bold" FontSize="12" TextColor="#222" />
+                    <Label Grid.Column="6" Text="جمعه" HorizontalOptions="Center" FontAttributes="Bold" FontSize="12" TextColor="#222" />
+                </Grid>
+
+                <!-- Days Grid -->
+                <Grid x:Name="DaysGrid" Row="3" Margin="0,12,0,0" ColumnSpacing="6" RowSpacing="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Row definitions will be dynamic in code-behind -->
+                </Grid>
+            </VerticalStackLayout>
+
+        </Grid>
+        <!-- Select Button -->
+        <Button         
+                x:Name="SelectButton"
+                Text="انتخاب"
+                BackgroundColor="#2563EB"
+                TextColor="White"
+                FontSize="16"
+                CornerRadius="10"
+                Margin="0,24,0,0"
+                HeightRequest="48"
+                FontFamily="IRANSans"
+                VerticalOptions="End"
+                StyleClass="PrimaryButton"
+                IsEnabled="{Binding currentDay, Converter={StaticResource NullToBoolConverter}}"
+                Clicked="SelectButton_Clicked" />
+    </Grid>
+   
+
+
+</ContentPage>

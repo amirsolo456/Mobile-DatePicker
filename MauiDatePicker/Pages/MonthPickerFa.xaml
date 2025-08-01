@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDatePicker.Pages.MonthPickerFa"
+             NavigationPage.HasNavigationBar="False"
+             FlowDirection="RightToLeft"
+             BackgroundColor="White"
+             Title="">
+
+    <Grid RowDefinitions="Auto, *, Auto" RowSpacing="20" Padding="14">
+
+        <!-- دکمه بستن -->
+        <ImageButton Source="backbutton.png"
+                HorizontalOptions="Start"
+                BackgroundColor="Transparent"
+                WidthRequest="32"
+                HeightRequest="32"
+                Clicked="OnCloseClicked"/>
+
+        <!-- بخش انتخاب سال و ماه -->
+        <VerticalStackLayout Grid.Row="1" Spacing="30" Margin="0,48,0,0">
+
+            <!-- هدر: سال و فلش -->
+            <Grid HorizontalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                
+                <ImageButton
+                    x:Name="PrevMonthButton"
+                    Source="rightcaret.png"
+                    BackgroundColor="Transparent"
+                    Grid.Column="0"
+                    Clicked="OnPrevYearClicked" />
+
+                <Label 
+                    Grid.Column ="1"
+                    x:Name="YearLabel"
+                    Text="{Binding SelectedYear}"
+                    FontSize="16"
+                    WidthRequest="100"
+                    FontAttributes="Bold"
+                    FontFamily="Yekan"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    TextColor="#111827"
+                    VerticalOptions="Center"/>
+
+                <ImageButton
+                    x:Name="NextMonthButton"
+                    Source="leftcaret.png"
+                    BackgroundColor="Transparent"
+                    Grid.Column="2"
+                    Clicked="OnNextYearClicked" />
+            </Grid>
+
+            <!-- بدنه ماه‌ها -->
+            <Grid x:Name="MonthGrid"
+                  ColumnDefinitions="*,*,*,*"
+                  RowSpacing="15"
+                  Padding="14"
+                  ColumnSpacing="15"
+                  RowDefinitions="50,50,50">
+                
+                <Border Style="{StaticResource MonthItemStyle}"  Grid.Row="0" Grid.Column="0" >
+                    <Label Text="فروردین" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="0" Grid.Column="1">
+                    <Label Text="اردیبهشت" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="0" Grid.Column="2">
+                    <Label Text="خرداد" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="0" Grid.Column="3">
+                    <Label Text="تیر" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="1" Grid.Column="0">
+                    <Label Text="مرداد" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border  Style="{StaticResource MonthItemStyle}" Grid.Row="1" Grid.Column="1">
+                    <Label Text="شهریور" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="1" Grid.Column="2">
+                    <Label Text="مهر" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}"  Grid.Row="1" Grid.Column="3">
+                    <Label Text="آبان" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="2" Grid.Column="0">
+                    <Label Text="آذر" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border  Style="{StaticResource MonthItemStyle}" Grid.Row="2" Grid.Column="1">
+                    <Label Text="دی" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="2" Grid.Column="2">
+                    <Label Text="بهمن"  Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <Border Style="{StaticResource MonthItemStyle}" Grid.Row="2" Grid.Column="3">
+                    <Label Text="اسفند" Style="{StaticResource MonthStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMonthTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+            </Grid>
+
+        </VerticalStackLayout>
+
+        <!-- دکمه انتخاب -->
+        <Button Grid.Row="2"
+                Text="انتخاب"
+                HeightRequest="48"
+                BackgroundColor="#2563EB"
+                TextColor="White"
+                CornerRadius="10"
+                FontAttributes="Bold"
+                FontFamily="IRANSans"
+                StyleClass="PrimaryButton"
+                IsEnabled="{Binding selectedMonth, Converter={StaticResource NullToBoolConverter}}"
+                Clicked="OnConfirmClicked"/>
+    </Grid>
+
+    <ContentPage.Resources>
+        <Style x:Key="MonthItemStyle" TargetType="Border">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="WidthRequest" Value="90" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="Stroke" Value="Transparent" />
+            <Setter Property="StrokeThickness" Value="1" />
+            <Setter Property="StrokeShape" Value="RoundRectangle 14"/>
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+
+        <Style x:Key="MonthStyle" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="LineBreakMode" Value="NoWrap" />
+            <Setter Property="WidthRequest" Value="90" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="VerticalOptions" Value="Fill" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="FontFamily" Value="IRANSans" />
+        </Style>
+    </ContentPage.Resources>
+</ContentPage>
