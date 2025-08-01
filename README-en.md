@@ -1,6 +1,4 @@
 
-### 🔹‌ نسخه انگلیسی (`README-en.md`)
-```markdown
 # 📅 Persian Date Picker for .NET MAUI
 
 A lightweight and reusable Persian (Solar Hijri) date picker control built for .NET MAUI. Includes a sample project to demonstrate usage.
@@ -9,7 +7,7 @@ A lightweight and reusable Persian (Solar Hijri) date picker control built for .
 
 - Full support for Persian (Shamsi) calendar
 - Clean, customizable UI
-- Mobile and desktop ready
+- Mobile and desktop ready but fully responsive and optimized for mobile use
 - Easy to integrate via a MAUI class library
 
 ## 🧱 Project Structure
@@ -21,7 +19,6 @@ A lightweight and reusable Persian (Solar Hijri) date picker control built for .
 
 ```bash
 # Prerequisites: .NET 8 SDK, Visual Studio 2022+
-git clone https://github.com/YourUsername/PersianDatePicker.git
-cd PersianDatePicker
+git clone https://github.com/amirsolo456/Mobile-DatePicker.git
 dotnet build
 dotnet run --project SampleApp
