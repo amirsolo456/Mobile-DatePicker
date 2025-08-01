@@ -33,3 +33,13 @@ If you encounter a problem or unexpected behavior, please leave a comment or ope
 - [🇬🇧 English Guid (README-en.md)](README-en.md)
 - [🇮🇷 راهنمای فارسی (README-fa.md)](README-fa.md)
 
+
+
+## ✍️ About the Developer
+
+This control was designed and developed by **Amir Soleymani**, with the goal of simplifying Persian date selection in .NET MAUI projects and providing a responsive, localized experience for Persian-speaking users.
+
+<p align="center" style="font-size:24px; font-weight:bold;">
+  <a href="https://github.com/amirsolo456" target="_blank" rel="noopener noreferrer">Amir Soleymani</a>
+</p>
+
