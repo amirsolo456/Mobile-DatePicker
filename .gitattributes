@@ -4,6 +4,7 @@
 *.json linguist-language=JSON
 *.xml linguist-language=XML
 *.md linguist-language=Markdown
+*.xaml text eol=crlf
 
 packages/* linguist-vendored
 node_modules/* linguist-vendored
