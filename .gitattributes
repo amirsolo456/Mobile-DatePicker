@@ -1,28 +1,10 @@
-# تعیین زبان C# برای فایل‌های .cs
+
 *.cs linguist-language=C#
-
-# تعیین زبان XAML برای فایل‌های .xaml
 *.xaml linguist-language=XAML
-
-# تعیین زبان JSON برای فایل‌های .json (مثلاً تنظیمات، داده‌های نمونه)
 *.json linguist-language=JSON
-
-# تعیین زبان XML برای فایل‌های .xml
 *.xml linguist-language=XML
-
-# تعیین زبان Markdown برای فایل‌های README و مستندات
 *.md linguist-language=Markdown
 
-# تعیین زبان PowerShell برای فایل‌های .ps1 (اسکریپت‌ها)
-*.ps1 linguist-language=PowerShell
-
-# تعیین زبان Bash برای فایل‌های اسکریپت شل لینوکس و مک
-*.sh linguist-language=Shell
-
-# نادیده گرفتن فایل‌های min.js که ممکن است وابسته باشند
-*.min.js linguist-vendored
-
-# نادیده گرفتن پوشه‌های کتابخانه‌های شخص ثالث (مثال)
 packages/* linguist-vendored
 node_modules/* linguist-vendored
 bin/* linguist-vendored
