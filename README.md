@@ -43,3 +43,6 @@ This control was designed and developed by **Amir Soleymani**, with the goal of 
   <a href="https://github.com/amirsolo456" target="_blank" rel="noopener noreferrer">Amir Soleymani</a>
 </p>
 
+<!-- GitHub Topics (Tags): 
+dotnet, dotnet-maui, maui, persian-date-picker, datepicker, shamsi-date, solar-hijri, maui-custom-control, maui-component, persian-calendar, localized-datepicker, mobile-ui, xaml, mvvm, reusable-component 
+-->
